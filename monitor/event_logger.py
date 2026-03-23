@@ -19,4 +19,4 @@ def log_event(db, parsed):
         parsed["timestamp"], parsed["ip"], parsed["message"], parsed["score"]
     ))
     db.commit()
-    print("[✓] Event logged in SQLite")
+    print("Event logged in SQLite")
