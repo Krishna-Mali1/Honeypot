@@ -24,7 +24,7 @@ for line in monitor_log(config["log_file_path"]):
         log_event(db, parsed)
 
         if score >= 50:
-            print(f"[✓] ALERT: Reputation score {score}")
+            print(f"ALERT: Reputation score {score}")
             send_email_alert(config, parsed)
         else:
             print(f"[!] IP reputation score {score} - no alert.")
